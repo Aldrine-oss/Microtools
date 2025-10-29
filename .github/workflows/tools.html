@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Cleaner | Micro Tools Hub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/text-cleaner.js"></script>
+</head>
+<body>
+  <header><a href="../index.html">← Back</a></header>
+  <main>
+    <h2>🧹 Text Cleaner</h2>
+    <p>Remove line breaks, extra spaces, and unwanted formatting.</p>
+    <textarea id="input" placeholder="Paste your text here..."></textarea>
+    <button id="cleanBtn">Clean Text</button>
+    <textarea id="output" placeholder="Cleaned text will appear here..."></textarea>
+    <button id="copyBtn">Copy</button>
+  </main>
+</body>
+</html>        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
